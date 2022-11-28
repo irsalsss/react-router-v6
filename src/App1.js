@@ -43,8 +43,8 @@ const router =
             signal: request.signal,
           });
           const pokemon = await res.json();
-          // return pokemon
-          return waiting(3000, pokemon)
+          return pokemon
+          // return waiting(3000, pokemon)
         }}
         element={<Data />}
       />
